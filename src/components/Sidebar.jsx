@@ -15,6 +15,57 @@ import {
 const { Sider } = Layout;
 const { Title } = Typography;
 
+const generalItems = [
+  {
+    key: 'dashboard',
+    icon: <AppstoreOutlined />,
+    label: 'Dashboard',
+  },
+  {
+    key: 'history',
+    icon: <ClockCircleOutlined />,
+    label: 'History',
+  },
+  {
+    key: 'calendar',
+    icon: <CalendarOutlined />,
+    label: 'Calendar',
+  },
+  {
+    key: 'appointments',
+    icon: <ScheduleOutlined />,
+    label: 'Appointments',
+  },
+  {
+    key: 'statistics',
+    icon: <BarChartOutlined />,
+    label: 'Statistics',
+  },
+];
+
+const toolsItems = [
+  {
+    key: 'tools',
+    icon: <ToolOutlined />,
+    label: 'Tools',
+  },
+  {
+    key: 'chat',
+    icon: <MessageOutlined />,
+    label: 'Chat',
+  },
+  {
+    key: 'support',
+    icon: <CustomerServiceOutlined />,
+    label: 'Support',
+  },
+  {
+    key: 'setting',
+    icon: <SettingOutlined />,
+    label: 'Setting',
+  },
+];
+
 const Sidebar = () => {
   return (
     <Sider
@@ -35,39 +86,19 @@ const Sidebar = () => {
       </div>
 
       <div style={{ padding: '0 16px', fontSize: 12, color: '#888' }}>General</div>
-      <Menu mode="inline" defaultSelectedKeys={['dashboard']} style={{ borderRight: 0, background: 'transparent' }}>
-        <Menu.Item key="dashboard" icon={<AppstoreOutlined />}>
-          Dashboard
-        </Menu.Item>
-        <Menu.Item key="history" icon={<ClockCircleOutlined />}>
-          History
-        </Menu.Item>
-        <Menu.Item key="calendar" icon={<CalendarOutlined />}>
-          Calendar
-        </Menu.Item>
-        <Menu.Item key="appointments" icon={<ScheduleOutlined />}>
-          Appointments
-        </Menu.Item>
-        <Menu.Item key="statistics" icon={<BarChartOutlined />}>
-          Statistics
-        </Menu.Item>
-      </Menu>
+      <Menu
+        mode="inline"
+        defaultSelectedKeys={['dashboard']}
+        style={{ borderRight: 0, background: 'transparent' }}
+        items={generalItems}
+      />
 
       <div style={{ padding: '16px', fontSize: 12, color: '#888' }}>Tools</div>
-      <Menu mode="inline" style={{ borderRight: 0, background: 'transparent' }}>
-        <Menu.Item key="tools" icon={<ToolOutlined />}>
-          Tools
-        </Menu.Item>
-        <Menu.Item key="chat" icon={<MessageOutlined />}>
-          Chat
-        </Menu.Item>
-        <Menu.Item key="support" icon={<CustomerServiceOutlined />}>
-          Support
-        </Menu.Item>
-        <Menu.Item key="setting" icon={<SettingOutlined />}>
-          Setting
-        </Menu.Item>
-      </Menu>
+      <Menu
+        mode="inline"
+        style={{ borderRight: 0, background: 'transparent' }}
+        items={toolsItems}
+      />
     </Sider>
   );
 };
