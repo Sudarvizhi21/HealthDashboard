@@ -21,7 +21,7 @@ const AnatomyModel = () => {
     >
       {/* Human Model Image */}
       <img
-        src="/anatomy.jpg" // Make sure this is in /public/anatomy.jpg
+        src="public/anatomy.jpg" // Make sure this is in /public/anatomy.jpg
         alt="Anatomy Model"
         style={{
           maxHeight: "100%",
