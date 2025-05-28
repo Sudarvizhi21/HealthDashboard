@@ -1,0 +1,34 @@
+.dashboard-header {
+  padding: 16px 24px;
+  background: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+
+.dashboard-title {
+  font-size: 24px;
+  font-weight: 600;
+  color: #1e1e1e;
+}
+
+.dashboard-search-bar {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  width: 100%;
+}
+
+.search-input {
+  flex: 1;
+  height: 40px;
+  font-size: 16px;
+}
+
+.bell-icon {
+  font-size: 20px;
+  cursor: pointer;
+  color: #1e1e1e;
+}

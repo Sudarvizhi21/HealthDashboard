@@ -1,0 +1,14 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #f0f2f5;
+}
+
+.ant-layout {
+  background: #f0f2f5;
+}
+
+.ant-menu-item {
+  margin: 0;
+  padding: 0 24px;
+}
