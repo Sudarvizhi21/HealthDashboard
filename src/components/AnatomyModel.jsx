@@ -1,6 +1,7 @@
 // src/components/AnatomyModel.jsx
 import React from "react";
 import { Button } from "antd";
+import anatomyImage from "../assets/anatomy.jpg"; // ✅ Import the image
 
 const AnatomyModel = () => {
   return (
@@ -8,27 +9,26 @@ const AnatomyModel = () => {
       style={{
         position: "relative",
         width: "100%",
-        height: "400px", // Fixed height for consistency
+        height: "400px",
         background: "#ffffff",
         borderRadius: "16px",
         padding: "20px",
         boxShadow: "0 4px 12px rgba(0, 0, 0, 0.1)",
         display: "flex",
-        justifyContent: "flex-start", // Align to the start to make room for charts
+        justifyContent: "flex-start",
         alignItems: "center",
         overflow: "hidden",
       }}
     >
       {/* Human Model Image */}
       <img
-        src="public/anatomy.jpg" // Make sure this is in /public/anatomy.jpg
+        src={anatomyImage}
         alt="Anatomy Model"
         style={{
           maxHeight: "100%",
-          width: "auto", // Let the width adjust based on max-height
-          flexShrink: 0, // Prevent the image from shrinking
+          width: "auto",
+          flexShrink: 0,
           objectFit: "contain",
-          
         }}
       />
 
@@ -39,7 +39,7 @@ const AnatomyModel = () => {
         style={{
           position: "absolute",
           top: "28%",
-          right:"20",
+          right: "20px", // ✅ fixed unit
           transform: "translateY(-50%)",
           color: "white",
           borderColor: "blue",
