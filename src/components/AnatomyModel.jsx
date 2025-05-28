@@ -1,7 +1,7 @@
 // src/components/AnatomyModel.jsx
 import React from "react";
 import { Button } from "antd";
-import anatomyImage from "../assets/anatomy.jpg"; // ✅ Import the image
+import anatomyImage from "../assets/anatomy.jpg"; // ✅ Correct import
 
 const AnatomyModel = () => {
   return (
@@ -39,7 +39,7 @@ const AnatomyModel = () => {
         style={{
           position: "absolute",
           top: "28%",
-          right: "20px", // ✅ fixed unit
+          right: "20px", // ✅ Fixed unit
           transform: "translateY(-50%)",
           color: "white",
           borderColor: "blue",
